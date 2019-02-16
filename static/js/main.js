@@ -23,14 +23,13 @@ $(document).ready(function () {
             nextArrow: '.js-category-slider__nav-next_men',
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 767,
                     settings: {
                         dots: true
                     }
                 }
             ]
         });
-
     };
     var categorySliderWomen = function() {
         $('.js-category-slider_women').slick({
@@ -41,7 +40,7 @@ $(document).ready(function () {
             nextArrow: '.js-category-slider__nav-next_women',
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 767,
                     settings: {
                         dots: true
                     }
@@ -56,6 +55,15 @@ $(document).ready(function () {
             infinite: true,
             prevArrow: '.js-category-slider__nav-prev_new',
             nextArrow: '.js-category-slider__nav-next_new',
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        dots: true,
+                        slidesToShow: 2,
+                    }
+                }
+            ]
 
         });
     };
@@ -66,6 +74,15 @@ $(document).ready(function () {
             infinite: true,
             prevArrow: '.js-category-slider__nav-prev_best',
             nextArrow: '.js-category-slider__nav-next_best',
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        dots: true,
+                        slidesToShow: 2,
+                    }
+                }
+            ]
 
         });
     };
@@ -76,6 +93,15 @@ $(document).ready(function () {
             infinite: true,
             prevArrow: '.js-category-slider__nav-prev_popular',
             nextArrow: '.js-category-slider__nav-next_popular',
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        dots: true,
+                        slidesToShow: 2,
+                    }
+                }
+            ]
 
         });
     };

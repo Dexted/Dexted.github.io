@@ -62,6 +62,12 @@ $(document).ready(function () {
                         dots: true,
                         slidesToShow: 2,
                     }
+                },
+                {
+                    breakpoint: 1239,
+                    settings: {
+                        slidesToShow: 3,
+                    }
                 }
             ]
 
@@ -81,6 +87,12 @@ $(document).ready(function () {
                         dots: true,
                         slidesToShow: 2,
                     }
+                },
+                {
+                    breakpoint: 1239,
+                    settings: {
+                        slidesToShow: 3,
+                    }
                 }
             ]
 
@@ -99,6 +111,12 @@ $(document).ready(function () {
                     settings: {
                         dots: true,
                         slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 1239,
+                    settings: {
+                        slidesToShow: 3,
                     }
                 }
             ]
@@ -128,7 +146,7 @@ $(document).ready(function () {
     };
 
 
-      var showDropdownMenu =function() {
+    var showDropdownMenu =function() {
         $(document).on('click','.search-form__select', function (){
             $('.dropdown-menu').toggleClass('active');
         });
@@ -148,6 +166,16 @@ $(document).ready(function () {
     // });
 
 
+
+    var mobileNav =function(){
+        $(document).on('click','.mobile-nav__sandwich', function (){
+            $('html').toggleClass('fixed');
+            $('.mobile-nav__content').toggleClass('active');
+        })
+    };
+
+
+
     showSpecialOffer();
     bannerSlider();
     categorySliderMen();
@@ -156,4 +184,5 @@ $(document).ready(function () {
     categorySliderBest();
     categorySliderPopular();
     showDropdownMenu();
+    mobileNav();
 });
